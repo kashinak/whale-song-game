@@ -15,6 +15,20 @@ header .container .row .col h1 h2 {
     }
 }
 
+.container {
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    border: 4px, blue;
+    color:#ffc107;
+}
 /* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
 .game-photo-1 {
     background: url("../images/beluga.jpeg");
@@ -23,6 +37,8 @@ header .container .row .col h1 h2 {
     min-height: 360px;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
+    z-index: -1;
+
 }
 
 .game-photo-2 {
@@ -32,6 +48,7 @@ header .container .row .col h1 h2 {
     min-height: 360px;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
+    z-index: -1;
 }
 
 .game-photo-3 {
@@ -41,6 +58,7 @@ header .container .row .col h1 h2 {
     min-height: 360px;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
+    z-index: -1;
 }
 
 .game-photo-4 {
@@ -50,5 +68,10 @@ header .container .row .col h1 h2 {
     min-height: 360px;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
+    z-index: -1;
+}
+
+#start-game {
+    z-index: 1;
 }
 
