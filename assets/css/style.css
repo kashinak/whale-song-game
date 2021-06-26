@@ -15,13 +15,6 @@ header .container .row .col h1 h2 {
     }
 }
 
-/* code snippet from https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background */
-.container {
-    display: flex;
-    justify-content: flex-start | flex-end | center;
-    
-}
-
 /* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
 .game-photo-1 {
     background: url("../images/beluga.jpeg");
