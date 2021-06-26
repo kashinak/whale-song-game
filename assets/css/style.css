@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+body {
+    font-family: 'Michroma', sans-serif;
+}
+
+header {
+    @font-face {
+        font-family: "Fish Out Of Water";
+        src: url(https://www.fontbros.com/families/fish-out-of-water);
+    }
+}
