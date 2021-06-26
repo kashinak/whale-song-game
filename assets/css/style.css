@@ -4,9 +4,15 @@ body {
     font-family: 'Michroma', sans-serif;
 }
 
-header {
+header .container .row .col h1 h2 {
     @font-face {
-        font-family: "Fish Out Of Water";
+        font-family: "fish-out-of-water";
         src: url(https://www.fontbros.com/families/fish-out-of-water);
     }
+}
+
+/* code snippet from https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background */
+.container {
+    display: flex;
+    justify-content: flex-start | flex-end | center
 }
