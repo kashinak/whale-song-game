@@ -19,4 +19,43 @@ header .container .row .col h1 h2 {
 .container {
     display: flex;
     justify-content: flex-start | flex-end | center;
+    
 }
+
+/* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
+.game-photo-1 {
+    background: url("../images/beluga.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 360px;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+
+.game-photo-2 {
+    background: url("../images/orca.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 360px;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+
+.game-photo-3 {
+    background: url("../images/rightwhale.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 360px;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+
+.game-photo-4 {
+    background: url("../images/spermwhale.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 360px;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+
