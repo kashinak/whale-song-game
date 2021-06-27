@@ -8,29 +8,34 @@ header {
     margin: 0;
 }
 
-header .container .row .col h1 h2 {
-    @font-face {
-        font-family: "fish-out-of-water";
-        src: url(https://www.fontbros.com/families/fish-out-of-water);
-    }
+@font-face {
+  font-family: 'fish-out-of-water';
+  src: url('https://www.fontbros.com/families/fish-out-of-water'); /* IE9 Compat Modes */
 }
 
+body {
+  font-family: 'fish-out-of-water';
+}
+
+/* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
 .container {
-    display: flex;
-    position: relative;
-    width: 50%;
+  position: relative;
+  border: 3px solid green;  
+}
+    
+/* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
-.container .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 5px;
-    border: 4px, blue;
-    color:#ffc107;
-}
 /* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
-.game-photo-1 {
+#game-photo-1 {
     background: url("../images/beluga.jpeg");
     background-size: cover;
     background-position: center;
@@ -38,10 +43,10 @@ header .container .row .col h1 h2 {
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
     z-index: -1;
-
+    text-align: center;
 }
 
-.game-photo-2 {
+#game-photo-2 {
     background: url("../images/orca.jpeg");
     background-size: cover;
     background-position: center;
@@ -49,9 +54,10 @@ header .container .row .col h1 h2 {
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
     z-index: -1;
+    text-align: center;
 }
 
-.game-photo-3 {
+#game-photo-3 {
     background: url("../images/rightwhale.jpeg");
     background-size: cover;
     background-position: center;
@@ -59,9 +65,10 @@ header .container .row .col h1 h2 {
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
     z-index: -1;
+    text-align: center;
 }
 
-.game-photo-4 {
+#game-photo-4 {
     background: url("../images/spermwhale.jpeg");
     background-size: cover;
     background-position: center;
@@ -69,9 +76,8 @@ header .container .row .col h1 h2 {
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
     z-index: -1;
+    text-align: center;
 }
 
-#start-game {
-    z-index: 1;
-}
+
 
