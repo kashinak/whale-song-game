@@ -5,15 +5,15 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    url("/fonts/FishOutOfWater-Regular.woff") format("woff");
+    src: url("../fonts/FishOutOfWater-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'FishOutOfWater';
+    font-family: 'FishOutOfWaterBold';
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-    url("/fonts/FishOutOfWater-Bold.woff") format("woff");
+    src: url("../fonts/FishOutOfWater-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -21,7 +21,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    url("/fonts/FishOutOfWater-Demibold.woff") format("woff");
+    src: url("../fonts/FishOutOfWater-Demibold.woff") format("woff");
 }
 
 p {
