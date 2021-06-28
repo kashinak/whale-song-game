@@ -1,12 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 
+@font-face {
+    font-family: 'FishOutOfWater';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    url("/fonts/FishOutOfWater-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'FishOutOfWater';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    url("/fonts/FishOutOfWater-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'FishOutOfWaterDemiBold';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    url("/fonts/FishOutOfWater-Demibold.woff") format("woff");
+}
+
+p {
+    font-family: 'FishOutOfWater', Arial, san-serif;
+}
+
+h1 {
+    font-family: ' FishOutOfWaterDemiBold', Arial, san-serif;
+}
+
 body {
     font-family: 'Michroma', sans-serif;
+    background-color: #007bff;
 }
 
 header {
-    margin: 0;
+    margin-top: 0;
+    background-color: darkblue;
 }
+
+header, h1 {
+    font-family: ' FishOutOfWaterDemiBold', Arial, san-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #01ffff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header, h2 {
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color:#01ffffe4;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 
 @font-face {
   font-family: 'fish-out-of-water';
@@ -20,7 +73,6 @@ body {
 /* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
 .container {
   position: relative;
-  border: 3px solid green;  
 } 
     
 /* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
@@ -33,6 +85,14 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
 } 
+
+#game-area {
+    margin-top: 250px;
+}
+
+#game-area .container {
+    background-color: orange;
+}
 
 /* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
 
@@ -98,9 +158,28 @@ body {
 }
 
 .btn {
-    border: 10px solid yellow;
-     padding-right: 150px;
+    border: 10px solid #00ffff;
+    padding-right: 150px;
     padding-left: 150px;
+    border-radius: 0;
 }
+
+.btn p {
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    color: azure;
+}
+
+.btn-warning {
+    color: #7dfff4;
+    background-color: #004085;
+    border-radius: 1rem;
+    font-family: 'Michroma';
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
 
 
