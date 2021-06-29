@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap"); */
 
 @font-face {
     font-family: 'FishOutOfWater';
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/FishOutOfWater-Regular.woff") format("woff");
+    src: url("/assets/css/fonts/FishOutOfWater-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/FishOutOfWater-Bold.woff") format("woff");
+    src: url("/assets/css/fonts/FishOutOfWater-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -21,19 +21,11 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/FishOutOfWater-Demibold.woff") format("woff");
-}
-
-p {
-    font-family: 'FishOutOfWater', Arial, san-serif;
-}
-
-h1 {
-    font-family: ' FishOutOfWaterDemiBold', Arial, san-serif;
+    src: url("/assets/css/fonts/FishOutOfWater-Demibold.woff") format("woff");
 }
 
 body {
-    font-family: 'Michroma', sans-serif;
+    /* font-family: 'Michroma', sans-serif; */
     background-color: #007bff;
 }
 
@@ -43,36 +35,27 @@ header {
 }
 
 header, h1 {
-    font-family: ' FishOutOfWaterDemiBold', Arial, san-serif;
+    font-family: 'FishOutOfWaterBold', Arial, sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 90px;
     color: #01ffff;
     text-align: center;
     padding-top: 30px;
 }
 
 header, h2 {
-    font-family: 'Michroma', sans-serif;
+    font-family: 'FishOutOfWaterDemiBold', Arial, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 75px;
     color:#01ffffe4;
     text-align: center;
     padding-bottom: 30px;
 }
 
-
-@font-face {
-  font-family: 'fish-out-of-water';
-  src: url('https://www.fontbros.com/families/fish-out-of-water'); /* IE9 Compat Modes */
-}
-
-body {
-  font-family: 'fish-out-of-water';
-}
-
 /* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
 .container {
   position: relative;
+  margin-bottom: 230px;
 } 
     
 /* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
@@ -88,11 +71,9 @@ body {
 
 #game-area {
     margin-top: 250px;
+
 }
 
-#game-area .container {
-    background-color: orange;
-}
 
 /* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
 
