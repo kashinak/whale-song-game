@@ -28,32 +28,52 @@
     </header>
     <div class="container" id="game-area">
         <div class="row">
-            <div class="col" id="game-box-1" data-type="beluga" onclick="DoSomething();">
-                <button class="btn" id="game-photo-1" >
+            <div class="col" id="game-box-1" data-type="beluga">
+                 
+                <button class="btn" id="game-photo-1" onclick="playSound1()">
+                    <audio src="/assets/audio/beluga_short.mp3" id="beluga-sound"></audio>
                     <p>Beluga Whale</p>
                 </button>
             </div>
-            <div class="col" id="game-box-2" data-type="orca" onclick="DoSomething();">
-                <button class="btn" id="game-photo-2" >
+            <div class="col" id="game-box-2" data-type="orca">
+                <button class="btn" id="game-photo-2" onclick="playSound2();">
+                    <audio src="/assets/audio/orca_short.mp3" id="orca-sound"></audio>
                     <p>Orca Whale</p>
                 </button>
             </div>
             <div class="w-100"></div>
-            <div class="col" id="game-box-3" data-type="right" onclick="DoSomething();">
-                <button class="btn" id="game-photo-3">
+            <div class="col" id="game-box-3" data-type="right">
+                <button class="btn" id="game-photo-3" onclick="playSound3();">
+                    <audio src="/assets/audio/north_atlantic_right_whale_short.mp3" id="rightwhale-sound"></audio>
                     <p>Right Whale</p>
                 </button>
             </div>
-            <div class="col" id="game-box-4" data-type="sperm" onclick="DoSomething();">
-                <button class="btn" id="game-photo-4">
+            <div class="col" id="game-box-4" data-type="sperm">
+                <button class="btn" id="game-photo-4" onclick="playSound4();">
+                    <audio src="/assets/audio/sperm_whale_short.mp3" id="spermwhale-sound"></audio>
                     <p>Sperm Whale</p>
                 </button>
             </div>
             <div class="center">
-                <button class="btn btn-lg btn-warning" data-type="start-game">Start Game!</button>
+                <button class="btn btn-lg btn-warning" id="play" data-type="start-game">Start Game!</button>
             </div>
         </div>
     </div>
+    <div class="score">
+        <!-- <div class="row score-area">
+            <div class="score-box" id="current-score">
+                <h3>(`Current Score: $("cuurentScore")`)</h3>
+            </div>
+            <div class="score-box" id="top-score">
+                <h3>Top Score:</h3>
+            </div>
+        </div> -->
+       
+        
+    
+       
+    </div>
+
   <link rel="stylesheet" href="assets/css/style.css">
     
 </body>
