@@ -26,6 +26,7 @@
 
 body {
     background-color: #007bff;
+    color: #00ffef;
 }
 
 header {
@@ -69,7 +70,7 @@ header, h2 {
 } 
 
 #game-area {
-    margin-top: 100px;
+    margin-top: 55px;
     margin-bottom: 50px;
 }
 
@@ -155,52 +156,78 @@ header, h2 {
 
 /* score area */
 
-#score-area {
-    background-position: center;
-    position: relative;
-    margin-top: 20px;
-}
-
-#score-title {
-    padding-right: 0px;
-    padding-left: 0;
+table {
+    border: 1px solid #02e5f3;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
     font-family: 'Michroma';
-    font-weight: bold;
-    font-size: 20px;
-    color: #7dfff4;
 }
 
-#score {
-    padding-bottom: 20px;
+table tr {
+background-color: #00008b;
+padding: .35em;
 }
 
-#round {
-    padding-left: 445px;
-    padding-bottom: 20px;
+table th,
+table td {
+padding: .625em;
+text-align: center;
+font-family: 'Michroma';
 }
 
-#high-score {
-    padding-left: 375px;
-    padding-bottom: 20px;
+table th {
+font-size: .85em;
+letter-spacing: .1em;
+text-transform: uppercase;
 }
 
-#numeric-score {
-    text-align: center;
-    position: absolute;
-    color: #39ff14;
+@media screen and (max-width: 600px) {
+table {
+border: 0;
 }
 
-
-#numeric-round {
-    padding-left: 477px;
-    color: #ffa805;
+table caption {
+font-size: 1.3em;
 }
 
-#numeric-high-score {
-    padding-left: 375px;
-    text-align: right;
-    color: #ccff00;
+table thead {
+border: none;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
 }
+
+table tr {
+border-bottom: 3px solid #ddd;
+display: block;
+margin-bottom: .625em;
+}
+
+table td {
+border-bottom: 1px solid #ddd;
+display: block;
+font-size: .8em;
+text-align: right;
+}
+
+table td::before {
+content: attr(data-label);
+float: left;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+table td:last-child {
+border-bottom: 0;
+}
+
 
 
 
