@@ -1,41 +1,4 @@
-// Wait for DOM to load before running game//
 
-// User buttons //
-const firstBox = document.querySelector("#game-box-one");
-const secondBox = document.querySelector("#game-box-two");
-const thirdBox = document.querySelector("#game-box-three");
-const fourthBox = document.querySelector("#game-box-four");
-const play = document.querySelector("#play");
-
-
-//Click buttons and add event listeners//
-//following code snippet is from Code Institute on eventListeners in the Maths Game lesson"
-document.addEventListener("DOMContentLoaded", function () {
-
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-
-        button.addEventListener("click", function () {
-
-            if (this.getAttribute("data-type") === "start-game") {
-
-                alert("Now let's figure out how to really start the game")
-                
-
-            } else {
-
-                let gameType = this.getAttribute("data-type");
-
-                alert(`You clicked ${gameType}`);
-
-            }
-
-        });
-
-    }
-
-});
 
 // User clicks play button //
 // Game starts let n = 1; [outer loop for playing n sounds]//
@@ -54,11 +17,11 @@ on correct or incorrrect options */
 
 // play button sound effects //
 
-function playSound1(event) {
+function playSound1() {
     document.getElementById('beluga-sound').play();
 };
 
-function playSound2(event) {
+function playSound2() {
     
     document.getElementById('orca-sound').play();
 
@@ -73,10 +36,7 @@ function playSound4() {
 };
 
 
-
-
-
-
+// game begiins when user presses start game button //
 
 
 
