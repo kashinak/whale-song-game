@@ -196,10 +196,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
             font-style: normal;
             font-display: swap;
             url("/fonts/FishOutOfWater-Demibold.woff") format("woff");
-        }
-```
+        }```
+
+
+
 -   Original whale sounds were varying length and overlapped while playing making it confusing to identify a singular whale sound unique to each whale. 
     -   Whale call raw files were edited down and audio mixed in Adobe Premiere Pro to 1-second durations to help simplify the audio playback game experience and build playback momentum.
+
 
 ## Deployment
 
@@ -269,13 +272,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   #### Photos
 
-1. [Beluga Photo](https://commons.wikimedia.org/wiki/File:Beluga_premier.gov.ru-2.jpeg): [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en), [Premier.gov.ru](https://premier.gov.ru/events/)
+1.  [Beluga Photo](https://commons.wikimedia.org/wiki/File:Beluga_premier.gov.ru-2.jpeg): [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en), [Premier.gov.ru](https://premier.gov.ru/events/)
 
 1. [Orca Photo](https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg): Public Domain, Robert Pittman, [NOAA](https://apps-afsc.fisheries.noaa.gov/Quarterly/amj2005/divrptsNMML3.htm)
 
-1. [Right Whale Photo](https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg): Public Domain, Robert Pittman, [NOAA](https://apps-afsc.fisheries.noaa.gov/Quarterly/amj2005/divrptsNMML3.htm)
+1. [North Atlantic Right Whale Photo](https://commons.wikimedia.org/wiki/File:Right_Whale_%22Scoop%22_(42853281122).jpg): Public Domain, [NOAA](https://apps-afsc.fisheries.noaa.gov/Quarterly/amj2005/divrptsNMML3.htm)
 
--   All content was written by the developer.
+1. [Sperm Whale Photo](https://commons.wikimedia.org/wiki/File:0b4a8510_by_vitaly_sokol-dbw14sol.jpg): [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en), [Will Falcon aka Vitaly Sokai](https://commons.wikimedia.org/w/index.php?title=Will_Falcon&action=edit&redlink=1)
 
 
 ### Acknowledgements
