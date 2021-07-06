@@ -52,13 +52,13 @@ The game is designed to be fun and light-hearted to help engage the player in le
 
 - ### Fonts
 
-    ..* The primary font **FishOutOfWater** was chosen for the game title because it has a fun cartoon-like water quality to fit the representation of whale's natural habitat. 
+     -   The primary font **FishOutOfWater** was chosen for the game title because it has a fun cartoon-like water quality to fit the representation of whale's natural habitat. 
 
-    ..* The secondary font **Michroma** was chosen for the game controls, score board and game instructions because of its digital, futuristic quality to represent the digital game environment.
+     -   The secondary font **Michroma** was chosen for the game controls, score board and game instructions because of its digital, futuristic quality to represent the digital game environment.
 
 - ### Colors
 
-    ..* The primary colors
+     -   The primary colors...
 
 - ### Styling
 
@@ -66,15 +66,15 @@ The game is designed to be fun and light-hearted to help engage the player in le
 
 - ### Card images
 
-    ..* Real photos were chosen for the primary game buttons, to represent individual whale species living in their real life natural environment. This documentary feel of the game is to encourage game players to continue their education of whale song outside the game. 
+     -   Real photos were chosen for the primary game buttons, to represent individual whale species living in their real life natural environment. This documentary feel of the game is to encourage game players to continue their education of whale song outside the game. 
 
 - ### Audio files
 
-    ..* Real audio recordings of whale songs were chosen to facilitate the learning experience discovering the nuanced difference between whale song between various whale species. 
+     -   Real audio recordings of whale songs were chosen to facilitate the learning experience discovering the nuanced difference between whale song between various whale species. 
 
-    ..* The elegant uplifting sound effect which plays after the player presses play button is to indicate to the player that that the game is about to begin.
+     -   The elegant uplifting sound effect which plays after the player presses play button is to indicate to the player that that the game is about to begin.
 
-    ..* The buzzer like game sound effect was use to clearly indicate to the player that the wrong button was selected and the game is over.
+     -   The buzzer like game sound effect was use to clearly indicate to the player that the wrong button was selected and the game is over.
 
 - ### Wireframes
 
@@ -169,9 +169,37 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   Title font:'FishOutOfWater'by [Font Bros](https://www.fontbros.com/) would not load after supplying to style.css the @font-face with  url for Font Bros. 
+    -   Bug was squashed by adding WOFF files to Whale Song game site directory and update the css code to: 
+        
+        ```css
+
+         @font-face {
+            font-family: 'FishOutOfWater';
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            url("/fonts/FishOutOfWater-Regular.woff") format("woff");
+        }
+
+        @font-face {
+            font-family: 'FishOutOfWater';
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+            url("/fonts/FishOutOfWater-Bold.woff") format("woff");
+        }
+
+        @font-face {
+            font-family: 'FishOutOfWaterDemiBold';
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            url("/fonts/FishOutOfWater-Demibold.woff") format("woff");
+        }
+```
+-   Original whale sounds were varying length and overlapped while playing making it confusing to identify a singular whale sound unique to each whale. 
+    -   Whale call raw files were edited down and audio mixed in Adobe Premiere Pro to 1-second durations to help simplify the audio playback game experience and build playback momentum.
 
 ## Deployment
 
