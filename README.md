@@ -267,11 +267,20 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
--   All Images were created by the developer.
+-   #### Photos
+
+1. [Beluga Photo](https://commons.wikimedia.org/wiki/File:Beluga_premier.gov.ru-2.jpeg): [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en), [Premier.gov.ru](https://premier.gov.ru/events/)
+
+1. [Orca Photo](https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg): Public Domain, Robert Pittman, [NOAA](https://apps-afsc.fisheries.noaa.gov/Quarterly/amj2005/divrptsNMML3.htm)
+
+1. [Right Whale Photo](https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg): Public Domain, Robert Pittman, [NOAA](https://apps-afsc.fisheries.noaa.gov/Quarterly/amj2005/divrptsNMML3.htm)
+
+-   All content was written by the developer.
+
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   My Mentor, Moosa Hassan for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
 
