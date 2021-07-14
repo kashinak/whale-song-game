@@ -18,3 +18,25 @@ function startGame() {
     gameSequence();
 };
 
+//game generates a sequence with a random tile click//
+function gameSequence() {
+    let n = sequence[Math.floor(Math.random() * sequence.length)];
+    setTimeout => {
+        switch(n){
+            case 1:
+            playSound1();
+            break;
+            case 2: 
+            playSound2();
+            break;
+            case 3:
+            playSound3();
+            break;
+            case 4:
+            playSound4();
+            break;
+            default:         
+        }
+    }, 1000;
+    end();
+};
