@@ -2,7 +2,6 @@
 let round = 0;
 let score = 0;
 let highScore = [];
-const sequence = [playSound1(), playSound2(), playSound3(), playSound4()];
 const startButton = document.getElementById("start");
 let num = 4;
 
@@ -98,5 +97,30 @@ function blink(id) {
                 }, 1000);
             });
  };
+
+ //add playerSequence to convert player game clicks to numbers in sequence array;
+function playerSequence() {
+    let playerClick = $(this).attr("id");
+    switch(playerClick){
+        case "topleft":
+            playerSequence.push(0);
+            startGame(0);
+            break;
+        case "topright":
+            playerSequence.push(1);
+            startGame(1);
+            break;
+
+        case "bottomleft":
+            playerSequence.push(2);
+            startGame(2);
+            break;
+
+        case "bottomright":
+            playerSequence.push(3);
+            startGame(3);
+            break;
+    }
+};
 
 
