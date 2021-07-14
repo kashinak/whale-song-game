@@ -1,8 +1,6 @@
-$('#how-to').click(function() {
-    $('#words').show(1000);
-});
-
-const startButton = document.getElementById('start');
+// $('#how-to').click(function() {
+//     $('#words').show(1000);
+// });
 
 // //My code snippet//
 function playSound1() {
