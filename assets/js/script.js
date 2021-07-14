@@ -73,5 +73,14 @@ function playSound4() {
     blink("game-photo-4");
 };
 
+/*function init() to provide event listeners to make game buttons clickable and to playsound 
+and blink when player presses game button*/
+function init() {
+    document.getElementById("game-photo-1").addEventListener("click", playSound1);
+    document.getElementById("game-photo-2").addEventListener("click", playSound2);
+    document.getElementById("game-photo-3").addEventListener("click", playSound3);
+    document.getElementById("game-photo-4").addEventListener("click", playSound4);
+}
+
 
 
