@@ -13,9 +13,10 @@ startButton.addEventListener("click", startGame);
 function startGame() {
     $("#round-text")[0].reset();
     $("#score-text")[0].reset();
-    document.getElementById("start").innerHTML = "Start Game!";
-    document.getElementById("start").innerHTML = "";
+    // document.getElementById("start").innerHTML = "Start Game!";
+    // document.getElementById("start").innerHTML = "";
     gameSequence();
+    end();
 };
 
 //game generates a sequence with a random tile click//
@@ -40,3 +41,37 @@ function gameSequence() {
     }, 1000;
     end();
 };
+
+//end function 
+function end() {
+    startButton.style.display = "";
+};
+
+//link game photo tiles with corresponding game sounds and blink capability//
+function playSound1() {
+    // console.log("Hello!");
+    document.getElementById("game-photo-1").style.outline = '#ffff00 solid 10px';
+    document.getElementById('beluga-sound').play();
+    blink("game-photo-1");
+};
+
+function playSound2() { 
+    document.getElementById("game-photo-2").style.outline = '#ffff00 solid 10px';
+    document.getElementById('orca-sound').play();
+    blink("game-photo-2");
+};
+
+function playSound3() {
+    document.getElementById("game-photo-3").style.outline = '#ffff00 solid 10px';
+    document.getElementById('rightwhale-sound').play();
+    blink("game-photo-3");
+};
+
+function playSound4() {
+    document.getElementById("game-photo-4").style.outline = '#ffff00 solid 10px';
+    document.getElementById('spermwhale-sound').play();
+    blink("game-photo-4");
+};
+
+
+
