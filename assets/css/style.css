@@ -52,6 +52,7 @@ header, h2 {
     padding-bottom: 30px;
 }
 
+
 /* code snippet from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical2_btn */
 .container {
   position: relative;
@@ -69,16 +70,66 @@ header, h2 {
   z-index: 1;
 } 
 
+/* code snipper from Code Insitutute 'Method Chaining - Challenge 2' */
+#wrapper {
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1050px;
+}
+
+@media screen and (min-width: 1200px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+    }
+}
+/* code snipper from Code Insitutute 'Method Chaining - Challenge 2' */
+.card {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #00008b;
+}
+
+
+.card p {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+#instructions {
+    margin-bottom: 15px;
+    margin-top: 45px;
+    display: none;
+}
+
 #game-area {
     margin-top: 55px;
     margin-bottom: 50px;
 }
 
-#topleft, #topright, #bottomleft, #bottomright {
-    padding: 0;
+button, #how-to {
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    background-color: #0000ff;
+    text-align: center;
+    /* padding: 1em .75em; */
+    text-decoration: none;
+    color: #02e5f3;
+    font-size: 2em;
+    font-family: 'FishOutOfWaterDemiBold', Arial, sans-serif;
 }
 
-/* code snippet from https://codeinstitute.com/ Rosie resume tutorial */
+#topleft, #topright, #bottomleft, #bottomright {
+    padding: 0;
+    border: 10px solid #00ffff;
+}
+
+/* code snippet modeled after from https://codeinstitute.com/ Rosie resume tutorial */
 
 #game-photo-1 {
     background: url("../images/beluga.jpeg");
@@ -86,7 +137,6 @@ header, h2 {
     background-position: center;
     min-height: 360px;
     background-repeat: no-repeat;
-    transition: all .5s ease-in-out;
     z-index: -1;
     text-align: center;
     width: 100%;
@@ -98,7 +148,6 @@ header, h2 {
     background-position: center;
     min-height: 360px;
     background-repeat: no-repeat;
-    transition: all .5s ease-in-out;
     z-index: -1;
     text-align: center;
     width: 100%;
@@ -111,7 +160,6 @@ header, h2 {
     background-position: center;
     min-height: 360px;
     background-repeat: no-repeat;
-    transition: all .5s ease-in-out;
     z-index: -1;
     text-align: center;
     width: 100%;
@@ -124,15 +172,14 @@ header, h2 {
     background-position: center;
     min-height: 360px;
     background-repeat: no-repeat;
-    transition: all .5s ease-in-out;
     z-index: -1;
     text-align: center;
     width: 100%;
  
 }
 
+
 .btn {
-    border: 10px solid #00ffff;
     padding-right: 150px;
     padding-left: 150px;
     border-radius: 0;
@@ -147,15 +194,15 @@ header, h2 {
 
 .btn-warning {
     color: #7dfff4;
-    background-color: #004085;
+    background-color: #00008b;
     border-radius: 1rem;
     font-family: 'Michroma';
     font-weight: bold;
     font-size: 28px;
 }
-
+  
 /* score area */
-
+/* modeled after Exeideas tutorial on responsive tables https://www.exeideas.com/2020/10/simple-responsive-html-table.html#Customization */
 table {
     border: 1px solid #02e5f3;
     border-collapse: collapse;
@@ -227,7 +274,3 @@ text-transform: uppercase;
 table td:last-child {
 border-bottom: 0;
 }
-
-
-
-

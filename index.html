@@ -13,10 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link href="https://www.fontbros.com/families/fish-out-of-water" rel="stylesheet">
-    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!--Bootstrap 4.2.1 documentation required JS scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
@@ -30,53 +28,57 @@
                 </div>
             </div>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              HOW TO PLAY
-            </button>
-            <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
-                <p>
-                  Wait for the computer to play a sequence of highlighted photos begining with one photo. Repeat the game sequence by pressing on each corresponding photo. After each round the computer will generate the same sequence, adding one addtional photo click. You win after 20 rounds! Game over when you press a photo out of game sequence. 
-                </p>
-                <p class="mb-0">
-                   Good Luck! Now Play the game!
-                </p>
-            </div>
-        </div>
     </header>
+    <button id="how-to-button">How to Play:</button>
+    <div class="container">
+        <div id="wrapper">
+            <div class="card" id="instructions">
+                <h2>Game Instructions</h2>
+                <ul>
+                    <li>Wait for the computer to play a sequence of highlighted photos begining with one photo.</li>
+                    <li>Repeat the game sequence by pressing on corresponding photos. </li> 
+                    <li>After each round the computer will generate the same sequence, adding one additional photo click.</li>
+                    <li>You win after 20 rounds!</li>
+                    <li>Game over when you press a photo out of game sequence.</li>
+                </ul>
+                <p>Play the Game! Good Luck!</p>
+            </div>
+       </div>
+    </div>
 
-  <div class="container tile-container js-container unclickable" id="game-area" src="/assets/video/underwater_40secloop_15mb.mp4">
+  <div class="container" id="game-area">
     <div class="row">
         <div class="col panel" id="topleft">
-            <button class="btn box-button tile tile-red unclickable" id="game-photo-1" data-tile="red">
-                <audio src="/assets/audio/beluga_short.mp3" id="beluga-sound" data-sound="red"></audio>
+            <button class="btn box-button" id="game-photo-1">
+                <audio src="/assets/audio/beluga_short.mp3" id="beluga-sound"></audio>
                 <p>Beluga Whale</p>
             </button>
         </div>
         <div class="col panel" id="topright">
-            <button class="btn box-button tile tile-green unclickable" id="game-photo-2" data-tile="green">
-                <audio class="hidden" src="/assets/audio/orca_short.mp3" id="orca-sound" data-sound="green"></audio>
+            <button class="btn box-button" id="game-photo-2">
+                <audio class="hidden" src="/assets/audio/orca_short.mp3" id="orca-sound"></audio>
                 <p>Orca Whale</p>
             </button>
         </div>
         <div class="w-100"></div>
         <div class="col panel" id="bottomleft">
-            <button class="btn box-button tile tile-blue unclickable" id="game-photo-3" data-tile="blue">
-                <audio class="hidden" src="/assets/audio/north_atlantic_right_whale_short.mp3" id="rightwhale-sound" data-sound="blue"></audio>
+            <button class="btn box-button" id="game-photo-3">
+                <audio class="hidden" src="/assets/audio/north_atlantic_right_whale_short.mp3" id="rightwhale-sound"></audio>
                 <p>Right Whale</p>
             </button>
         </div>
         <div class="col panel" id="bottomright">
-            <button class="btn box-button tile tile-yellow unclickable" id="game-photo-4" data-tile="yellow">
+            <button class="btn box-button" id="game-photo-4">
                 <audio class="hidden" src="/assets/audio/sperm_whale_short.mp3" id="spermwhale-sound" data-sound="yellow"></audio>
                 <p>Sperm Whale</p>
             </button>
         </div>
-        <div class="center info-section">
+        <div class="center start-game" id="start">
             <audio class="hidden" src=""></audio>
-            <button class="btn btn-lg btn-warning start-button js-start" id="start" onclick="play()">Start Game!</button>
-        <!--span code from Freshmen tutorial-->
-            <span class="info js-info hidden"></span>
+            <button class="btn btn-lg btn-warning" onclick="startGame()">Start Game!</button>
+        </div>
+        <div class="center start-game" id="game-over">
+            <h1></h1>
         </div>
       </div>
   </div>
@@ -84,7 +86,7 @@
   <table>
     <thead>
     <tr>
-    <th scope="col">Score</th>
+    <th scope="col" id="game-score">Score</th>
     <th scope="col">Round</th>
     <th scope="col">High Score</th>
     </tr>
@@ -92,10 +94,14 @@
     <tbody>
     <tr>
     <td data-label="score">12 points</td>
-    <td data-label="round">3</td>
+    <td class="js-heading" data-label="round">3</td>
     <td data-label="high-score">45 points</td>
     </tr>
     </tbody>
     </table>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script> -->
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.js"></script>
 </body>
 </html>
+
