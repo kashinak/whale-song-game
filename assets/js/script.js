@@ -2,27 +2,26 @@
 let round = 0;
 let score = 0;
 let highScore = [];
-const sequence = [];
-const playerSequence = [];
+const sequence = [playSound1(), playSound2(), playSound3(), playSound4()];
 const startButton = document.getElementById("start");
+let num = 4;
 
 //upon clicking startButton, game console clears and new game sequence is played//
 
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-    $("#round-text")[0].reset();
-    $("#score-text")[0].reset();
-    // document.getElementById("start").innerHTML = "Start Game!";
-    // document.getElementById("start").innerHTML = "";
+    document.getElementById("start").innerHTML = "Start Game!";
+    document.getElementById("start").innerHTML = "";
     gameSequence();
-    end();
 };
+
 
 //game generates a sequence with a random tile click//
 function gameSequence() {
-    let n = sequence[Math.floor(Math.random() * sequence.length)];
-    setTimeout => {
+    init();
+    let n = Math.floor(Math.random() * num +1);
+    setTimeout(() => {
         switch(n){
             case 1:
             playSound1();
@@ -38,7 +37,7 @@ function gameSequence() {
             break;
             default:         
         }
-    }, 1000;
+    }, 1000);
     end();
 };
 
@@ -99,4 +98,5 @@ function blink(id) {
                 }, 1000);
             });
  };
+
 
