@@ -82,5 +82,21 @@ function init() {
     document.getElementById("game-photo-4").addEventListener("click", playSound4);
 }
 
-
+/*blink function creates yellow outline border appear when player clicks a gameboard button and 
+then the border disappears after 1 second*/
+function blink(id) {
+    var f = document.getElementById(id);
+    // setTimeout(function() {
+    //    f.style.display = (f.style.display == 'none' ? '' : 'none');
+    // }, 500);
+    new Promise((resolve, reject) => {
+                f.style.outline = '#ffff00 solid 10px';
+                setTimeout(() => {
+                    f.style.outline = '';
+                    setTimeout(() => {
+                        resolve();
+                    }, 250);
+                }, 1000);
+            });
+ };
 
